@@ -1,0 +1,73 @@
+.all {
+    display: flex;
+    /* position: absolute; */
+    width: 100%;
+}
+
+.left {
+    position: fixed;
+    padding: 1vw;
+    width: 28%;
+    height: 100vh;
+    margin-top: 35px;
+    background-color: rgb(55, 52, 52);
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.left .home {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+.left .home a {
+    width: 70%;
+    /* border: 2px solid green; */
+}
+
+.left .home a i {
+    width: 25%;
+    /* border: 2px solid yellow; */
+}
+
+.left a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2vw;
+    margin-top: 1vw;
+    padding: .5vw;
+    border-radius: .6vw;
+}
+
+.left a:hover {
+    color: rgb(19, 10, 50);
+    background-color: rgb(88, 74, 74);
+}
+
+.right {
+    width: 100%;
+    margin-left: 28%;
+    padding-top: 5vw;
+}
+
+.block1 {
+    width: 50%;
+    height: 70vh;
+    border: 2px solid;
+    /* background-color: green; */
+}
+
+.block1 i {
+    width: 22px;
+    height: 22px;
+}
+
+.block2 {
+    width: 40%;
+    height: 80vh;
+    background-color: blue;
+}

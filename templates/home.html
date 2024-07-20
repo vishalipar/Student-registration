@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}form{% endblock %}
+
+{% block css %}"{% static 'home.css' %}"{% endblock %}
+
+{% block content %}
+        
+    <div id="all1">
+    
+        
+        
+        <div class="formall">
+            
+            <h1>Registration Form</h1>
+            
+            <form method='POST' action="">
+                {% csrf_token %}
+                {% comment %} {{ form.as_p }} {% endcomment %}
+                
+                <table>
+                    <tr>
+                        <td><input name='name' type="text" placeholder='Full Name' required></tr>
+                    
+                        </td>
+                    <tr>
+                        <td><input name='email' type="email" placeholder='Email' required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input name='mobile' type="number" placeholder='Mobile Number' required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input name='age' type="number" placeholder='Age' required>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input name='location' type="text" placeholder='Location' required>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                
+                
+                <button type='submit'>Register Now</button>
+                
+                <div class="message">
+                    <h3>Your form is submited successfully</h3>
+                </div>
+            </form>
+            
+            
+        </div>
+        
+    </div>
+    
+    <script src="{% static 'script.js' %}"></script>
+{% endblock %}

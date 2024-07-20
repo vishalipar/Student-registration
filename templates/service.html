@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}Services{% endblock %}
+
+
+<link rel="stylesheet" href={% block css1 %}{% endblock %}>
+
+
+{% comment %} <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/> {% endcomment %}
+{% block css %}"{% static 'css/service.css' %}"{% endblock %}
+
+
+{% block content %}
+
+
+<div class="all">
+    
+    <div class="left">
+        <div class="home">
+            <a href="../">
+                <i class="ri-home-line"></i>
+                Home
+            </a>
+            
+        </div>
+        
+        <a href="#">
+            <i class="ri-article-line"></i>
+            Registration</a>
+        
+        <a href="#">
+            <i class="ri-id-card-line"></i>
+            Registered Students</a>
+        
+        <a href="#">
+            <i class="ri-customer-service-line"></i>
+            Service Available</a>
+            
+            
+        <a href="../animals">
+            <i class="ri-bear-smile-line"></i>
+            Animals
+        </a>
+        
+        <a href="#">
+            <i class="ri-more-2-line"></i>
+            More </a>
+        
+    </div>
+    
+    <div class="right">
+        {% block content2 %}{% endblock %}
+
+    </div>
+{% endblock %}

@@ -1,0 +1,41 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vw;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 3vw;
+    /* overflow-x: scroll; */
+}
+
+.card {
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: rgb(255, 250, 233);
+    padding: 1vw;
+    margin: 1vw;
+    width: 15rem;
+    height: 9rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 3px 3px 8px black;
+}
+
+#stud-detail {
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(58, 49, 12);
+    margin-top: 2vw;
+    padding: .5vw;
+}

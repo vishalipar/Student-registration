@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block title %}registered students{% endblock %}
+
+{% block css %}"{% static 'students.css' %}"{% endblock %}
+
+{% block content %}
+<h1>Registered Students</h1>
+
+<div class="cards">
+    {% for student in students %}
+        <div class="card">
+        
+            <h3>{{student.name}}</h3>
+            <h3>{{ student.location }}</h3>
+            <a id='stud-detail' href="{% url 'stud_detail' student.id %}">Details
+            </a>
+            {% comment %} <a id='stud-detail' href="<int>">Details</a> {% endcomment %}
+        </div>
+    {% endfor %}
+
+</div>
+
+
+
+
+
+
+
+{% endblock %}

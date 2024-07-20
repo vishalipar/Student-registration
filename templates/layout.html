@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Default{% endblock %}</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="{% static 'layout.css' %}">
+    <link rel="stylesheet" href={% block css %}{% endblock %}>
+</head>
+<body>
+    <nav>
+        <div class="nav-items">
+            <a href="../">Form</a>
+            <a href="../students">Students</a>
+            <a href="../service">Service</a>
+            <a href="../contact">Contact us</a>
+            <div class="more"><a href="../more"><i class="ri-indent-decrease"></i></a>
+            </div>
+            
+        </div>
+    </nav>
+    
+    <div class="pad">
+    </div>
+    
+    {% block content %}
+    {% endblock %}
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>

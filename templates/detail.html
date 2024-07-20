@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <link rel="stylesheet" href="{% static 'css/detail.css' %}">
+</head>
+<body>
+    <div class="box">
+        
+        <table>
+            
+            <tr>
+                <td><h2>Name </h2></td>
+                <td><h3>{{student.name}}</h3></td>
+            </tr>
+            <tr>
+                <td><h2>Email Id </h2></td>
+                <td><h3>{{student.email}}</h3></td>
+            </tr>
+            <tr>
+                <td><h2>Age </h2></td>
+                <td><h3>{{student.age}}</h3></td>
+            </tr>
+            <tr>
+                <td><h2>Mobile Number </h2></td>
+                <td><h3>{{student.mobile}}</h3></td>
+            </tr>
+            <tr>
+                <td><h2>Location </h2></td>
+                <td><h3>{{student.location}}</h3></td>
+            </tr>
+            
+            
+            
+        </table>
+        
+        <div class="back-button">
+            <a href="../">Back</a>
+        </div>
+    </div>
+</body>
+</html>
